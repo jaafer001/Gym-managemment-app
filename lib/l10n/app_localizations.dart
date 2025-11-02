@@ -1,0 +1,497 @@
+import 'package:flutter/material.dart';
+
+class AppLocalizations {
+  final Locale locale;
+
+  AppLocalizations(this.locale);
+
+  static AppLocalizations? of(BuildContext context) {
+    return Localizations.of<AppLocalizations>(context, AppLocalizations);
+  }
+
+  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
+
+  // Define all strings
+  static final Map<String, Map<String, String>> _localizedValues = {
+    'en': {
+      'dashboard': 'Dashboard',
+      'total': 'Total',
+      'active': 'Active',
+      'expired': 'Expired',
+      'new': 'New',
+      'search_members': 'Search members...',
+      'add_member': 'Add Member',
+      'edit_member': 'Edit Member',
+      'member_name': 'Name',
+      'age': 'Age',
+      'gender': 'Gender',
+      'male': 'Male',
+      'female': 'Female',
+      'phone': 'Phone',
+      'email': 'Email',
+      'subscription_type': 'Subscription Type',
+      'duration': 'Duration (days)',
+      'required': 'Required',
+      'enter_valid_age': 'Please enter a valid age',
+      'select_image': 'Select Image',
+      'choose_source': 'Choose Source',
+      'camera': 'Camera',
+      'gallery': 'Gallery',
+      'save': 'Save',
+      'cancel': 'Cancel',
+      'delete': 'Delete',
+      'edit': 'Edit',
+      'renew': 'Renew',
+      'delete_member': 'Delete Member?',
+      'confirm_delete': 'Are you sure you want to delete this member?',
+      'delete_failed': 'Failed to delete member',
+      'renew_success': 'Subscription renewed',
+      'renew_failed': 'Failed to renew subscription',
+      'current_subscriptions': 'Current Subscriptions',
+      'subscription_history': 'Subscription History',
+      'expires_on': 'Expires on',
+      'from': 'From',
+      'to': 'To',
+      'notifications': 'Notifications',
+      'no_notifications': 'No notifications',
+      'expired_subscription': 'Expired subscription',
+      'settings': 'Settings',
+      'dark_mode': 'Dark Mode',
+      'list_view': 'List View',
+      'settings_saved': 'Settings saved',
+      'backup_export_failed': 'Failed to export data',
+      'backup_not_found': 'Backup file not found',
+      'backup_import_failed': 'Failed to import data',
+      'save_member_failed': 'Failed to save member',
+      'image_compress_failed': 'Failed to compress image',
+      'language': 'Language',
+      'select_language': 'Select Language',
+      'sort_by': 'Sort By',
+      'newest': 'Newest',
+      'oldest': 'Oldest',
+      'alphabetical': 'Alphabetical',
+    },
+    'ar': {
+      'dashboard': 'لوحة التحكم',
+      'total': 'إجمالي',
+      'active': 'نشط',
+      'expired': 'منتهي',
+      'new': 'جديد',
+      'search_members': 'البحث عن الأعضاء...',
+      'add_member': 'إضافة عضو',
+      'edit_member': 'تعديل عضو',
+      'member_name': 'الاسم',
+      'age': 'العمر',
+      'gender': 'الجنس',
+      'male': 'ذكر',
+      'female': 'أنثى',
+      'phone': 'الهاتف',
+      'email': 'البريد الإلكتروني',
+      'subscription_type': 'نوع الاشتراك',
+      'duration': 'المدة (أيام)',
+      'required': 'مطلوب',
+      'enter_valid_age': 'يرجى إدخال عمر صحيح',
+      'select_image': 'اختيار صورة',
+      'choose_source': 'اختر المصدر',
+      'camera': 'الكاميرا',
+      'gallery': 'المعرض',
+      'save': 'حفظ',
+      'cancel': 'إلغاء',
+      'delete': 'حذف',
+      'edit': 'تعديل',
+      'renew': 'تجديد',
+      'delete_member': 'حذف العضو؟',
+      'confirm_delete': 'هل أنت متأكد من حذف هذا العضو؟',
+      'delete_failed': 'فشل حذف العضو',
+      'renew_success': 'تم تجديد الاشتراك',
+      'renew_failed': 'فشل تجديد الاشتراك',
+      'current_subscriptions': 'الاشتراكات الحالية',
+      'subscription_history': 'تاريخ الاشتراكات',
+      'expires_on': 'ينتهي في',
+      'from': 'من',
+      'to': 'إلى',
+      'notifications': 'الإشعارات',
+      'no_notifications': 'لا توجد إشعارات',
+      'expired_subscription': 'اشتراك منتهي',
+      'settings': 'الإعدادات',
+      'dark_mode': 'الوضع المظلم',
+      'list_view': 'عرض القائمة',
+      'settings_saved': 'تم حفظ الإعدادات',
+      'backup_export_failed': 'فشل تصدير البيانات',
+      'backup_not_found': 'ملف النسخة الاحتياطية غير موجود',
+      'backup_import_failed': 'فشل استيراد البيانات',
+      'save_member_failed': 'فشل حفظ العضو',
+      'image_compress_failed': 'فشل ضغط الصورة',
+      'language': 'اللغة',
+      'select_language': 'اختر اللغة',
+      'sort_by': 'ترتيب حسب',
+      'newest': 'الأحدث',
+      'oldest': 'الأقدم',
+      'alphabetical': 'أبجدي',
+    },
+    'fr': {
+      'dashboard': 'Tableau de bord',
+      'total': 'Total',
+      'active': 'Actif',
+      'expired': 'Expiré',
+      'new': 'Nouveau',
+      'search_members': 'Rechercher des membres...',
+      'add_member': 'Ajouter un membre',
+      'edit_member': 'Modifier le membre',
+      'member_name': 'Nom',
+      'age': 'Âge',
+      'gender': 'Genre',
+      'male': 'Homme',
+      'female': 'Femme',
+      'phone': 'Téléphone',
+      'email': 'Email',
+      'subscription_type': 'Type d\'abonnement',
+      'duration': 'Durée (jours)',
+      'required': 'Requis',
+      'enter_valid_age': 'Veuillez entrer un âge valide',
+      'select_image': 'Sélectionner une image',
+      'choose_source': 'Choisir la source',
+      'camera': 'Caméra',
+      'gallery': 'Galerie',
+      'save': 'Enregistrer',
+      'cancel': 'Annuler',
+      'delete': 'Supprimer',
+      'edit': 'Modifier',
+      'renew': 'Renouveler',
+      'delete_member': 'Supprimer le membre?',
+      'confirm_delete': 'Êtes-vous sûr de vouloir supprimer ce membre?',
+      'delete_failed': 'Échec de la suppression du membre',
+      'renew_success': 'Abonnement renouvelé',
+      'renew_failed': 'Échec du renouvellement de l\'abonnement',
+      'current_subscriptions': 'Abonnements actuels',
+      'subscription_history': 'Historique des abonnements',
+      'expires_on': 'Expire le',
+      'from': 'De',
+      'to': 'À',
+      'notifications': 'Notifications',
+      'no_notifications': 'Aucune notification',
+      'expired_subscription': 'Abonnement expiré',
+      'settings': 'Paramètres',
+      'dark_mode': 'Mode sombre',
+      'list_view': 'Vue liste',
+      'settings_saved': 'Paramètres enregistrés',
+      'backup_export_failed': 'Échec de l\'exportation des données',
+      'backup_not_found': 'Fichier de sauvegarde introuvable',
+      'backup_import_failed': 'Échec de l\'importation des données',
+      'save_member_failed': 'Échec de l\'enregistrement du membre',
+      'image_compress_failed': 'Échec de la compression de l\'image',
+      'language': 'Langue',
+      'select_language': 'Sélectionner la langue',
+      'sort_by': 'Trier par',
+      'newest': 'Plus récent',
+      'oldest': 'Plus ancien',
+      'alphabetical': 'Alphabétique',
+    },
+    'ja': {
+      'dashboard': 'ダッシュボード',
+      'total': '合計',
+      'active': 'アクティブ',
+      'expired': '期限切れ',
+      'new': '新規',
+      'search_members': 'メンバーを検索...',
+      'add_member': 'メンバーを追加',
+      'edit_member': 'メンバーを編集',
+      'member_name': '名前',
+      'age': '年齢',
+      'gender': '性別',
+      'male': '男性',
+      'female': '女性',
+      'phone': '電話',
+      'email': 'メール',
+      'subscription_type': 'サブスクリプションタイプ',
+      'duration': '期間（日）',
+      'required': '必須',
+      'enter_valid_age': '有効な年齢を入力してください',
+      'select_image': '画像を選択',
+      'choose_source': 'ソースを選択',
+      'camera': 'カメラ',
+      'gallery': 'ギャラリー',
+      'save': '保存',
+      'cancel': 'キャンセル',
+      'delete': '削除',
+      'edit': '編集',
+      'renew': '更新',
+      'delete_member': 'メンバーを削除しますか？',
+      'confirm_delete': 'このメンバーを削除してもよろしいですか？',
+      'delete_failed': 'メンバーの削除に失敗しました',
+      'renew_success': 'サブスクリプションが更新されました',
+      'renew_failed': 'サブスクリプションの更新に失敗しました',
+      'current_subscriptions': '現在のサブスクリプション',
+      'subscription_history': 'サブスクリプション履歴',
+      'expires_on': '有効期限',
+      'from': '開始',
+      'to': '終了',
+      'notifications': '通知',
+      'no_notifications': '通知なし',
+      'expired_subscription': '期限切れのサブスクリプション',
+      'settings': '設定',
+      'dark_mode': 'ダークモード',
+      'list_view': 'リスト表示',
+      'settings_saved': '設定が保存されました',
+      'backup_export_failed': 'データのエクスポートに失敗しました',
+      'backup_not_found': 'バックアップファイルが見つかりません',
+      'backup_import_failed': 'データのインポートに失敗しました',
+      'save_member_failed': 'メンバーの保存に失敗しました',
+      'image_compress_failed': '画像の圧縮に失敗しました',
+      'language': '言語',
+      'select_language': '言語を選択',
+      'sort_by': '並べ替え',
+      'newest': '最新',
+      'oldest': '古い',
+      'alphabetical': 'アルファベット順',
+    },
+    'ru': {
+      'dashboard': 'Панель управления',
+      'total': 'Всего',
+      'active': 'Активные',
+      'expired': 'Истекшие',
+      'new': 'Новые',
+      'search_members': 'Поиск членов...',
+      'add_member': 'Добавить члена',
+      'edit_member': 'Редактировать члена',
+      'member_name': 'Имя',
+      'age': 'Возраст',
+      'gender': 'Пол',
+      'male': 'Мужской',
+      'female': 'Женский',
+      'phone': 'Телефон',
+      'email': 'Email',
+      'subscription_type': 'Тип подписки',
+      'duration': 'Продолжительность (дни)',
+      'required': 'Обязательно',
+      'enter_valid_age': 'Пожалуйста, введите действительный возраст',
+      'select_image': 'Выбрать изображение',
+      'choose_source': 'Выберите источник',
+      'camera': 'Камера',
+      'gallery': 'Галерея',
+      'save': 'Сохранить',
+      'cancel': 'Отмена',
+      'delete': 'Удалить',
+      'edit': 'Редактировать',
+      'renew': 'Обновить',
+      'delete_member': 'Удалить члена?',
+      'confirm_delete': 'Вы уверены, что хотите удалить этого члена?',
+      'delete_failed': 'Не удалось удалить члена',
+      'renew_success': 'Подписка обновлена',
+      'renew_failed': 'Не удалось обновить подписку',
+      'current_subscriptions': 'Текущие подписки',
+      'subscription_history': 'История подписок',
+      'expires_on': 'Истекает',
+      'from': 'С',
+      'to': 'До',
+      'notifications': 'Уведомления',
+      'no_notifications': 'Нет уведомлений',
+      'expired_subscription': 'Истекшая подписка',
+      'settings': 'Настройки',
+      'dark_mode': 'Темный режим',
+      'list_view': 'Вид списка',
+      'settings_saved': 'Настройки сохранены',
+      'backup_export_failed': 'Не удалось экспортировать данные',
+      'backup_not_found': 'Файл резервной копии не найден',
+      'backup_import_failed': 'Не удалось импортировать данные',
+      'save_member_failed': 'Не удалось сохранить члена',
+      'image_compress_failed': 'Не удалось сжать изображение',
+      'language': 'Язык',
+      'select_language': 'Выберите язык',
+      'sort_by': 'Сортировать по',
+      'newest': 'Новейшие',
+      'oldest': 'Старейшие',
+      'alphabetical': 'По алфавиту',
+    },
+    'ko': {
+      'dashboard': '대시보드',
+      'total': '전체',
+      'active': '활성',
+      'expired': '만료됨',
+      'new': '신규',
+      'search_members': '회원 검색...',
+      'add_member': '회원 추가',
+      'edit_member': '회원 편집',
+      'member_name': '이름',
+      'age': '나이',
+      'gender': '성별',
+      'male': '남성',
+      'female': '여성',
+      'phone': '전화',
+      'email': '이메일',
+      'subscription_type': '구독 유형',
+      'duration': '기간 (일)',
+      'required': '필수',
+      'enter_valid_age': '유효한 나이를 입력하세요',
+      'select_image': '이미지 선택',
+      'choose_source': '소스 선택',
+      'camera': '카메라',
+      'gallery': '갤러리',
+      'save': '저장',
+      'cancel': '취소',
+      'delete': '삭제',
+      'edit': '편집',
+      'renew': '갱신',
+      'delete_member': '회원을 삭제하시겠습니까?',
+      'confirm_delete': '이 회원을 삭제하시겠습니까?',
+      'delete_failed': '회원 삭제 실패',
+      'renew_success': '구독이 갱신되었습니다',
+      'renew_failed': '구독 갱신 실패',
+      'current_subscriptions': '현재 구독',
+      'subscription_history': '구독 기록',
+      'expires_on': '만료일',
+      'from': '시작',
+      'to': '종료',
+      'notifications': '알림',
+      'no_notifications': '알림 없음',
+      'expired_subscription': '만료된 구독',
+      'settings': '설정',
+      'dark_mode': '다크 모드',
+      'list_view': '목록 보기',
+      'settings_saved': '설정이 저장되었습니다',
+      'backup_export_failed': '데이터 내보내기 실패',
+      'backup_not_found': '백업 파일을 찾을 수 없습니다',
+      'backup_import_failed': '데이터 가져오기 실패',
+      'save_member_failed': '회원 저장 실패',
+      'image_compress_failed': '이미지 압축 실패',
+      'language': '언어',
+      'select_language': '언어 선택',
+      'sort_by': '정렬 기준',
+      'newest': '최신',
+      'oldest': '오래된',
+      'alphabetical': '알파벳순',
+    },
+    'es': {
+      'dashboard': 'Panel de control',
+      'total': 'Total',
+      'active': 'Activo',
+      'expired': 'Expirado',
+      'new': 'Nuevo',
+      'search_members': 'Buscar miembros...',
+      'add_member': 'Agregar miembro',
+      'edit_member': 'Editar miembro',
+      'member_name': 'Nombre',
+      'age': 'Edad',
+      'gender': 'Género',
+      'male': 'Masculino',
+      'female': 'Femenino',
+      'phone': 'Teléfono',
+      'email': 'Correo electrónico',
+      'subscription_type': 'Tipo de suscripción',
+      'duration': 'Duración (días)',
+      'required': 'Requerido',
+      'enter_valid_age': 'Por favor ingrese una edad válida',
+      'select_image': 'Seleccionar imagen',
+      'choose_source': 'Elegir fuente',
+      'camera': 'Cámara',
+      'gallery': 'Galería',
+      'save': 'Guardar',
+      'cancel': 'Cancelar',
+      'delete': 'Eliminar',
+      'edit': 'Editar',
+      'renew': 'Renovar',
+      'delete_member': '¿Eliminar miembro?',
+      'confirm_delete': '¿Está seguro de que desea eliminar este miembro?',
+      'delete_failed': 'Error al eliminar miembro',
+      'renew_success': 'Suscripción renovada',
+      'renew_failed': 'Error al renovar suscripción',
+      'current_subscriptions': 'Suscripciones actuales',
+      'subscription_history': 'Historial de suscripciones',
+      'expires_on': 'Expira el',
+      'from': 'Desde',
+      'to': 'Hasta',
+      'notifications': 'Notificaciones',
+      'no_notifications': 'Sin notificaciones',
+      'expired_subscription': 'Suscripción expirada',
+      'settings': 'Configuración',
+      'dark_mode': 'Modo oscuro',
+      'list_view': 'Vista de lista',
+      'settings_saved': 'Configuración guardada',
+      'backup_export_failed': 'Error al exportar datos',
+      'backup_not_found': 'Archivo de respaldo no encontrado',
+      'backup_import_failed': 'Error al importar datos',
+      'save_member_failed': 'Error al guardar miembro',
+      'image_compress_failed': 'Error al comprimir imagen',
+      'language': 'Idioma',
+      'select_language': 'Seleccionar idioma',
+      'sort_by': 'Ordenar por',
+      'newest': 'Más reciente',
+      'oldest': 'Más antiguo',
+      'alphabetical': 'Alfabético',
+    },
+  };
+
+  String translate(String key) {
+    final lang = locale.languageCode;
+    return _localizedValues[lang]?[key] ?? _localizedValues['en']?[key] ?? key;
+  }
+
+  // Helper getters for easier access
+  String get dashboard => translate('dashboard');
+  String get total => translate('total');
+  String get active => translate('active');
+  String get expired => translate('expired');
+  String get newMembers => translate('new');
+  String get searchMembers => translate('search_members');
+  String get addMember => translate('add_member');
+  String get editMember => translate('edit_member');
+  String get memberName => translate('member_name');
+  String get age => translate('age');
+  String get gender => translate('gender');
+  String get male => translate('male');
+  String get female => translate('female');
+  String get phone => translate('phone');
+  String get email => translate('email');
+  String get subscriptionType => translate('subscription_type');
+  String get duration => translate('duration');
+  String get required => translate('required');
+  String get enterValidAge => translate('enter_valid_age');
+  String get selectImage => translate('select_image');
+  String get chooseSource => translate('choose_source');
+  String get camera => translate('camera');
+  String get gallery => translate('gallery');
+  String get save => translate('save');
+  String get cancel => translate('cancel');
+  String get delete => translate('delete');
+  String get edit => translate('edit');
+  String get renew => translate('renew');
+  String get deleteMember => translate('delete_member');
+  String get confirmDelete => translate('confirm_delete');
+  String get deleteFailed => translate('delete_failed');
+  String get renewSuccess => translate('renew_success');
+  String get renewFailed => translate('renew_failed');
+  String get currentSubscriptions => translate('current_subscriptions');
+  String get subscriptionHistory => translate('subscription_history');
+  String get expiresOn => translate('expires_on');
+  String get from => translate('from');
+  String get to => translate('to');
+  String get notifications => translate('notifications');
+  String get noNotifications => translate('no_notifications');
+  String get expiredSubscription => translate('expired_subscription');
+  String get settings => translate('settings');
+  String get darkMode => translate('dark_mode');
+  String get listView => translate('list_view');
+  String get settingsSaved => translate('settings_saved');
+  String get backupExportFailed => translate('backup_export_failed');
+  String get backupNotFound => translate('backup_not_found');
+  String get backupImportFailed => translate('backup_import_failed');
+  String get saveMemberFailed => translate('save_member_failed');
+  String get imageCompressFailed => translate('image_compress_failed');
+}
+
+class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
+  const _AppLocalizationsDelegate();
+
+  @override
+  bool isSupported(Locale locale) {
+    return ['en', 'ar', 'fr', 'ja', 'ru', 'ko', 'es'].contains(locale.languageCode);
+  }
+
+  @override
+  Future<AppLocalizations> load(Locale locale) async {
+    return AppLocalizations(locale);
+  }
+
+  @override
+  bool shouldReload(_AppLocalizationsDelegate old) => false;
+}
